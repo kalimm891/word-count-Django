@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+</head>
+<body>
+    <h1> Your Result is : </h1>
+    <h1>Data Entered By User is : {{data}} </h1>
+    <h1> Total Words in Data is : {{ total }}</h1>
+    <h1>Word Count : {{ words }}</h1>
+     <hr>
+    {% for i,j in words.items %}
+        <h1>{{i }} : {{j}}</h1> +
+    {% endfor %}
+
+</body>
+</html>
